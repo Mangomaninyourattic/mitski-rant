@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mitski, my mother</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oswald&family=Unna&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+	margin: 0;
+	padding: 0;
+	background-color: coral;
+	}
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #000000; 
+	background-size: 200px;
+	margin: 0; 
+	padding: 0;
+	border: 10px double black; /* Adjust the border width as needed */
+}	
+p { 
+	margin-top: 0px; 
+	text-align: justify;
+	font-size: medium;
+}
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: rgb(0, 0, 0);
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: rgb(0, 0, 0);
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: rgba(0, 0, 0, 0.76);
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: rgba(255, 255, 255, 0.67);
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	background-size: 00px;
+	overflow: auto;
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+.highlight, .copyright {
+	color: white;
+}
+h1 {
+	padding-top: 90px;
+	font-size: 300%;
+	color: black;
+	font-family: 'DM Serif Display', serif;
+}
+footer { 
+	text-align: center; 
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+	.sidebar {
+		position: fixed;
+		top: 55px;
+		right: 0;
+		width: 5%; /* Adjust the width as needed */
+		min-width: 200px; /* Set a minimum width to avoid extreme narrowness */
+		padding: 20px;
+		background-color: coral;
+		border-right: double 10px black;
+	  }
+	  .border-strip {
+		height: 50px; /* Adjust the height of the border strip as needed */
+		background: url('https://www.rollingstone.com/wp-content/uploads/2023/09/mitski-album-review.jpg?w=1581&h=1054&crop=1') repeat-x;
+		background-size: contain; /* Adjust the background size to 'cover', 'contain', or specific dimensions */
+	  }
+	  .sidebar .wrapper {
+		font-family: verdana, sans-serif;
+	  }
+	  
+	  .sidebar h3 {
+		margin: 10px 0 5px 0;
+		height: 16px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	  }
+	  
+	  .sidebar ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	  }
+	  
+	  .sidebar li {
+		line-height: 1.3em;
+		padding-top: 20px;
+		margin-bottom: 5px;
+	  }
+	  
+	  .sidebar li a {
+		color: #000000; /* Adjust the color as needed */
+		text-decoration: none;
+		font-size: 20px;
+	  }
+	  
+	  .sidebar li a:hover {
+		text-decoration: underline;
+		color: white;
+	  }
+.contact-section-header, .contact-links {
+	text-align: center;
+}
+@media only screen and (max-width: 1272px) {
+	.sidebar {
+		font-size: 15px;
+		min-width: 120px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		background-color: rgb(255, 177, 149);
+	}
+	.highlight {
+		color: rgb(255, 255, 255);
+	}
+	.page-wrapper {
+	  padding-right: 20%;
+	  padding-left: 20%;
+	}
+
+	.sidebar {
+	  display: none; /* Hide the sidebar on small screens */
+	}
+	
+	.border-strip {
+	  display: none; /* Hide the border strip on smaller screens if needed */
+	}
+  
+	/* Add styles for the nav bar at the top */
+	.nav-bar {
+	  background-color: rgb(214, 68, 0);
+	  padding: 10px;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  z-index: 1000; /* Ensure it's above other elements */
+	}
+	
+	.nav-bar a {
+	  color: white;
+	  text-decoration: none;
+	  margin: 0 15px;
+	  font-size: 16px;
+	}
+  }
+.main-section {
+	max-width: 900px;
+}
+@media only screen and (max-width: 400px) {
+	body {
+		background-color: rgb(232, 205, 195);
+	}
+	.highlight, footer, h2{
+		color: rgb(235, 78, 20);
+	}
+	.copyright {
+		color: black;
+	}
+	h2 {
+		font-size: 20px;
+	}
+}
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="center-box">
+        <section class="intro">
+            <nav id="navbar" class="nav sidebar" role="complementary">
+                <ul>
+                    <li><a class="list" href="#introduction">Introduction</a></li>
+                    <li><a class="list" href="#bug">Bug Like an Angel</a></li>
+                    <li><a class="list" href="#buffalo">Buffalo Replaced</a></li>
+                    <li><a class="list" href="#heaven">Heaven</a></li>
+                    <li><a class="list" href="#memories">When Memories Snow</a></li>
+                    <li><a class="list" href="#love">My love, Mine, All Mine</a></li>
+                    <li><a class="list" href="#conclusion">Conclusion</a></li>
+                </ul>
+            </nav>
+        <div class="center-box writing">
+            <main>
+                <h1 class="Exploring_the_Cosmos">Analysis of Mitski's Album "The Land is Inhospitable and So are We"</h1>
+                <section class="main-section intro" id="introduction">
+                    <p><span class="highlight">The Land is Inhospitable and So Are We</span> is the seventh studio album by Mitski. The album’s existence was confirmed by a short audio message posted to Mitski’s YouTube channel. Its first single, <span class="highlight">“Bug Like An Angel”</span>, was released on July 26, 2023, alongside a music video.</p>
+                    <p>Mitski's album <span class="highlight">"The Land is Inhospitable and So are We"</span> encompasses a myriad of themes and messages that deeply resonate with listeners. The album explores the complexities of human emotions, existential dilemmas, and the search for identity and purpose. Mitski's lyrical prowess and musical arrangements amplify the impact of her storytelling, allowing the audience to immerse themselves in the raw and vulnerable narratives. Throughout the album, several standout tracks serve as a canvas for the exploration of these themes, including <span class="highlight">"Bug Like an Angel," "Buffalo Replaced," "Heaven," "When Memories Snow," and "My Love, Mine, All Mine."</span> These songs will serve as focal points for analysis, delving into the rich layers of meaning and the religious implications woven into Mitski's lyrics.</p>
+                </section>
+                <section class="main-section" id="bug">
+                    <h2>Bug Like an Angel</h2>
+                    <p>In <span class="highlight">"bug like an angel"</span> Mitski presents a thought-provoking exploration of human vulnerability and the pursuit of something greater. The lyrics delve into the symbolism of insects and angels, contrasting their characteristics and highlighting the duality of our existence. The mention of bugs serves as a metaphor for our imperfections, while the reference to angels represents a longing for transcendence. Mitski crafts a narrative that reflects on the complexities of the human experience, inviting listeners to reflect on their own struggles and aspirations.</p>
+                    <p>The lyric  <span class="highlight">"bug like an angel"</span> resonates deeply with me as well. Mitski's ability to juxtapose the mundane (bug) with the divine (angel) adds a layer of complexity to the narrative. It's a poignant metaphor for the coexistence of beauty and imperfection in our lives. The line about the devil experiencing the wrath of God is particularly striking. It echoes a profound theological concept, emphasizing the interplay between divine justice and the consequences of one's actions. This notion resonates with me on a personal level, as I, too, grapple with justifying my mistakes in the face of a larger cosmic design. Your reflection on fate and predestined life paths resonates deeply. The idea that our lives are predetermined can indeed create a complex interplay between accountability and a sense of inevitability.</p>
+                    <p>There's a certain sadness in acknowledging that, at times, it feels like the script of our lives has been written ahead of us. It prompts contemplation on whether accountability is diluted in the face of a perceived destiny. It's as if the acknowledgment of a preordained fate provides a convenient refuge, a way to rationalize our missteps. Yet, beneath that rationalization, there's a subtle recognition of the responsibility we bear for our actions. This duality adds a layer of nuance to the emotional landscape, highlighting the tension between accepting fate and maintaining a sense of agency. In Mitski's exploration of these themes, there's an invitation to delve into the intricate dance between personal accountability and the cosmic forces that shape our existence. It's a complex terrain, one where self-reflection and the search for meaning intertwine, ultimately contributing to the richness of the human experience.</p>
+                </section>
+                <section class="main-section" id="buffalo">
+                    <h2>Buffalo Replaced</h2>
+                    <p>The lyrics of  <span class="highlight">"Buffalo Replaced"</span> suggest a contemplation of the inevitability of change. The imagery of a freight train stampeding through the backyard and the notion of buffalo being replaced highlight the unstoppable force of time and transformation. The concept of loss, whether it be of a person, a phase in life, or a familiar state, is intertwined with the idea of finding meaning amid these changes. The song prompts listeners to reflect on how we navigate and derive significance from the shifting landscapes of our lives.</p>
+                    <p>The title itself,  <span class="highlight">"Buffalo Replaced,"</span> implies a sacrificial element. The use of the buffalo as a symbol may draw parallels to traditional religious or spiritual sacrifices. In various cultures, sacrificial rituals are often associated with change, renewal, or appeasement of higher powers. The act of replacing the buffalo could symbolize a willingness to undergo personal sacrifice or change in pursuit of something greater. This theme encourages an exploration of the transformative power of faith, not necessarily in a religious context, but in the broader sense of having faith in oneself or a higher purpose.</p>
+                    <p>The lyrics invite contemplation on the role of religion as a coping mechanism during challenging times. The singer's acknowledgment of a hope without a name and the reassurance found in seeing a sleeping face may echo the ways in which faith, whether religious or spiritual, can provide solace and hope. The song suggests that, despite the uncertainties and difficulties presented by the metaphorical freight train, there's a source of strength and resilience that can be tapped into through faith. It encourages listeners to consider how belief systems, whether religious or personal, play a role in navigating the complexities of life.</p>
+                    <p>And while I present the song as quite depressing, for me, the song always reminds me of my friend, who I call my cow and she calls me her camel. I realise how much I have changed and how much she has changed since we met. I think the song reflects the feelings of beautiful memories that we have shared over our friendship. The beautiful imagery of fireflies as highway cars may have a deep meaning, but to me it just presents itself as beautiful conversations we have shared. And while I do feel a sense of loss as I am currently quite ar away from her, the feeling that she is out there making the world even better makes me so much more happier. It makes me anticipate more about the next time I meet her.</p>
+                </section>
+                <section class="main-section" id="heaven">  
+                    <h2>Heaven</h2>      
+                    <p>The repetition of  <span class="highlight">"Heaven"</span> in the chorus emphasizes the overarching theme, possibly signifying the highs or blissful moments experienced in the relationship. The post-chorus, with its non-lexical sounds, contributes to the dreamy and atmospheric quality of the song. In essence,  <span class="highlight">"Heaven"</span> invites listeners into a multifaceted journey through the complexities of a romantic relationship, capturing both its challenges and the intimate, sometimes sensual, moments that define such connections. The interpretation is subjective, and the song's themes may resonate differently based on individual perspectives and experiences.</p>
+                    <p>The inclusion of nature elements, such as the storm dancing outside, introduces a layer of symbolism that may represent the emotional turbulence within a relationship. References to a low, warm voice, curses, and a lingering kiss infuse the lyrics with a sense of passion and physicality, indicating a more intimate and sensual dimension to the narrative. The repetition of <span class="highlight">"Heaven"</span> in the chorus emphasizes the overarching theme, possibly signifying the highs or blissful moments experienced in the relationship. The post-chorus, with its non-lexical sounds, contributes to the dreamy and atmospheric quality of the song.</p>
+                    <p>This song, to me, feels very intimate. She expresses her relationship so beautifully and the turbulences she faces as they progress through life. For her, the relationship is filled with loving moments and while the dark and arguments and problems do wait for them at every corner, she looks forward to experiencing every good moment that awaits them rather than staying still on the occasional turrbulence.</p>
+                </section>
+                <section class="main-section" id="memories">
+                    <h2>When Memories Snow</h2>
+                    <p>In  <span class="highlight">"When Memories Snow,"</span> Mitski delves into the profound power of memories as a form of negative feelings weighing down a person until eventually they break down or wish to break down. Mitski's exploration of memories as a source of turbulence deepens the emotional resonance of the song, inviting listeners to reflect on the influence of past experiences.</p>
+                    <p>The song paints a picture of a person grappling with the weight of memories, trying to navigate through the emotional residue left by past experiences. The metaphor of snow and the act of shoveling evoke a sense of effort and struggle to clear a path for oneself. The persistent nature of memories, even as they melt away, is a central theme, highlighting the lasting impact of certain experiences.</p>
+                    <p>Mitski's introspective lyrics and the contemplative tone of the music create a somber atmosphere, capturing the complex emotions associated with the struggle to cope with memories and their influence on one's well-being. The title, <span class="highlight">""When Memories Snow,"</span> suggests that memories, like snow, can accumulate gradually, covering and affecting various aspects of one's life.</p>
+                    <p>This song makes me picture my self on bed, buried under the weight of everything I have done wrong. Going over every argument I have had, every time I have embarrased myself, every time I have lied, every time someone has hurt me. The thought of resting forever if I could just leave all my duties alone.</p>
+                </section>
+                <section class="main-section" id="love">
+                    <h2>My love, Mine, All Mine</h2>
+                    <p>Within the song <span class="highlight">"My love, Mine, All Mine"</span>, Mitski presents herself in the world where nothing is free besides her loving soul and the love she is able to give to others. She talks about material things which are not always permenant, she expresses her dire possession over her love, not her partner, which is an incredibly beautiful way to look at the way a human being loves for another.</p>
+                    <p>She uses the moon as a vessel to convey her love to her partner before and after her death. She accepts he rmortality and wishes to present her love even after her death to the ones she loves. She often talks about being an insignificant speck in the big, wide world (for example in the song <span class="highlight">"Me and My husband"</span>) and she acknowledges that even after her death the thing that will live on is her love.</p>
+                </section>
+                <section class="main-section" id="conclusion">
+                    <p>Mitski's ability to connect intimately with her listeners is a testament to her unique lyrical style. Her words have a remarkable ability to resonate with audiences, evoking deep emotions and fostering a sense of shared experience. The incorporation of religious themes in her songs further enhances this connection by tapping into universal aspects of the human condition and exploring profound questions of faith, spirituality, and the search for meaning. Anecdotal evidence and fan testimonials reveal the impact of Mitski's music, with many fans expressing how her lyrics have provided solace, inspiration, and a sense of understanding in their own lives. Mitski's distinct lyrical style, coupled with the exploration of religious themes, establishes a powerful and intimate connection with her listeners, creating a space for reflection, empathy, and emotional resonance.</p>
+                    <p>In conclusion, the analysis of Mitski's album  <span class="highlight">"The Land is Inhospitable and So are We"</span> reveals the profound impact of religious themes in her music. Through her exploration of spirituality, Mitski invites listeners to delve into the complexities of the human experience, contemplating questions of faith, transcendence, and the search for meaning. Her ability to connect intimately with her audience is evident in the evocative and resonant nature of her lyrical style. The incorporation of religious motifs further enhances this connection, offering a space for introspection, empathy, and emotional resonance. Mitski's album serves as a testament to the power of music to ignite deep emotions, foster introspection, and create a sense of shared understanding between artist and listener.</p>
+                </section>
+            </main>
+        </section>
+    </div>
+</div>
+<footer>
+    <div class="contact-section-header">
+        <h3>★ Let's work together...</h3>
+        <p style="text-align: center;">Message me any time ★ </p>
+    </div>
+    <div class="contact-links">
+        <a href="https://www.instagram.com/nova_is_in_your_attic/" target="_blank" class="btn contact-details">
+            <i class="fab fa-instagram-square"></i>Instagram
+        </a>
+        <a id="profile-link" href="https://github.com/Mangomaninyourattic" target="_blank" class="btn contact-details">
+            <i class="fab fa-github"></i>Github
+        </a>
+        <a href="https://twitter.com/Mangoinanattic" target="_blank" class="btn contact-details">
+            <i class="fab fa-twitter"></i>Twitter
+        </a>
+        <p class="footer-sentence" style="text-align: center;">All projects are real, but do not call that fking number</p>
+        <p class="copyright" style="text-align: center;">© MangoManInYourAttic</p>
+    </div>
+</footer>
+<div class="border-strip"></div>
+</body>
+</html>
