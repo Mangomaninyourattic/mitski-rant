@@ -1,6 +1,8 @@
 # mitski-rant
 Mitski's Album Analysis
-An in-depth analysis of Mitski's album, "The Land is Inhospitable and So are We," delving into the profound themes and emotions embedded in each track. Explore Mitski's lyrical prowess as she navigates human vulnerability, existential dilemmas, and the search for identity and purpose.
+An in-depth analysis of Mitski's album
+
+"The Land is Inhospitable and So are We," delving into the profound themes and emotions embedded in each track. Explore Mitski's lyrical prowess as she navigates human vulnerability, existential dilemmas, and the search for identity and purpose.
 
 Features
 Responsive Design: Fluid layout ensuring a seamless experience across various devices.
