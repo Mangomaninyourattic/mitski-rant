@@ -62,14 +62,13 @@ abbr {
 	}
 
 .intro { 
-	min-width: 470px;
 	width: 100%;
 	}
 .highlight, .copyright {
 	color: white;
 }
 h1 {
-	padding-top: 90px;
+	padding-top: 10%;
 	font-size: 300%;
 	color: black;
 	font-family: 'DM Serif Display', serif;
@@ -137,6 +136,10 @@ footer a:link, footer a:visited {
 	.sidebar {
 		font-size: 15px;
 		min-width: 120px;
+		background-color: rgb(250, 136, 95);
+	}
+	body {
+		background-color: rgb(250, 136, 95);
 	}
 }
 
@@ -176,22 +179,46 @@ footer a:link, footer a:visited {
 	  margin: 0 15px;
 	  font-size: 16px;
 	}
+	.page-wrapper {
+        padding: 10%;
+    }
   }
-.main-section {
-	max-width: 900px;
-}
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 596px) {
+	.page-wrapper {
+        padding: 10%;
+    }
+	.sidebar {
+		padding: 0;
+		display: none;
+	}
+	.center-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
 	body {
 		background-color: rgb(232, 205, 195);
+		max-width: 100%;
+        overflow-x: hidden;
 	}
-	.highlight, footer, h2{
+	footer {
 		color: rgb(235, 78, 20);
 	}
 	.copyright {
 		color: black;
 	}
-	h2 {
+	h2, h1 {
 		font-size: 20px;
+		max-width: 100%;
+	}
+	p {
+		font-size: 13px;
+		max-width: 300px;
+	}
+    .main-section {
+        max-width: 100%;
+    }
+	.highlight {
+		color: rgb(235, 78, 20);
 	}
 }
     </style>
@@ -259,17 +286,17 @@ footer a:link, footer a:visited {
 </div>
 <footer>
     <div class="contact-section-header">
-        <h3>★ Let's work together...</h3>
+        <h3 style="text-align: center;">★ Let's work together...</h3>
         <p style="text-align: center;">Message me any time ★ </p>
     </div>
-    <div class="contact-links">
-        <a href="https://www.instagram.com/nova_is_in_your_attic/" target="_blank" class="btn contact-details">
+    <div style="text-align: center;" class="contact-links">
+        <a style="text-align: center;" href="https://www.instagram.com/nova_is_in_your_attic/" target="_blank" class="btn contact-details">
             <i class="fab fa-instagram-square"></i>Instagram
         </a>
-        <a id="profile-link" href="https://github.com/Mangomaninyourattic" target="_blank" class="btn contact-details">
+        <a style="text-align: center;" id="profile-link" href="https://github.com/Mangomaninyourattic" target="_blank" class="btn contact-details">
             <i class="fab fa-github"></i>Github
         </a>
-        <a href="https://twitter.com/Mangoinanattic" target="_blank" class="btn contact-details">
+        <a style="text-align: center;" href="https://twitter.com/Mangoinanattic" target="_blank" class="btn contact-details">
             <i class="fab fa-twitter"></i>Twitter
         </a>
         <p class="footer-sentence" style="text-align: center;">All projects are real, but do not call that fking number</p>
